@@ -1,0 +1,72 @@
+Invoking gulp - development
+[23:59:01] Using gulpfile ~/public_html/MeanStack/gulpfile.js
+[23:59:01] Starting 'clean'...
+[23:59:01] Finished 'clean' after 6.21 ms
+[23:59:01] Starting 'default'...
+[23:59:01] Starting 'coffee'...
+[23:59:01] Finished 'coffee' after 9.34 ms
+[23:59:01] Starting 'clean'...
+[23:59:01] Starting 'less'...
+[23:59:01] Starting 'csslint'...
+[23:59:01] Starting 'env:development'...
+[23:59:01] Finished 'env:development' after 30 μs
+[23:59:01] Starting 'devServe'...
+[23:59:01] Finished 'devServe' after 150 ms
+[23:59:01] Starting 'watch'...
+[23:59:52] Finished 'watch' after 50 s
+
+... Uhoh. Got error listen EADDRINUSE ...
+Error: listen EADDRINUSE
+  at exports._errnoException (util.js:746:11)
+  at Server._listen2 (net.js:1156:14)
+  at listen (net.js:1182:10)
+  at Server.listen (net.js:1267:5)
+  at Server.listen (/home/campan7/public_html/MeanStack/node_modules/gulp-livereload/node_modules/mini-lr/lib/server.js:162:15)
+  at Function.exports.listen (/home/campan7/public_html/MeanStack/node_modules/gulp-livereload/index.js:95:18)
+  at Gulp.<anonymous> (/home/campan7/public_html/MeanStack/gulp/development.js:85:22)
+  at module.exports (/home/campan7/public_html/MeanStack/node_modules/gulp/node_modules/orchestrator/lib/runTask.js:34:7)
+  at Gulp.Orchestrator._runTask (/home/campan7/public_html/MeanStack/node_modules/gulp/node_modules/orchestrator/index.js:273:3)
+  at Gulp.Orchestrator._runStep (/home/campan7/public_html/MeanStack/node_modules/gulp/node_modules/orchestrator/index.js:214:10)
+  at /home/campan7/public_html/MeanStack/node_modules/gulp/node_modules/orchestrator/index.js:279:18
+  at finish (/home/campan7/public_html/MeanStack/node_modules/gulp/node_modules/orchestrator/lib/runTask.js:21:8)
+  at module.exports (/home/campan7/public_html/MeanStack/node_modules/gulp/node_modules/orchestrator/lib/runTask.js:60:3)
+  at Gulp.Orchestrator._runTask (/home/campan7/public_html/MeanStack/node_modules/gulp/node_modules/orchestrator/index.js:273:3)
+  at Gulp.Orchestrator._runStep (/home/campan7/public_html/MeanStack/node_modules/gulp/node_modules/orchestrator/index.js:214:10)
+  at /home/campan7/public_html/MeanStack/node_modules/gulp/node_modules/orchestrator/index.js:279:18
+  at finish (/home/campan7/public_html/MeanStack/node_modules/gulp/node_modules/orchestrator/lib/runTask.js:21:8)
+  at module.exports (/home/campan7/public_html/MeanStack/node_modules/gulp/node_modules/orchestrator/lib/runTask.js:60:3)
+  at Gulp.Orchestrator._runTask (/home/campan7/public_html/MeanStack/node_modules/gulp/node_modules/orchestrator/index.js:273:3)
+  at Gulp.Orchestrator._runStep (/home/campan7/public_html/MeanStack/node_modules/gulp/node_modules/orchestrator/index.js:214:10)
+  at /home/campan7/public_html/MeanStack/node_modules/gulp/node_modules/orchestrator/index.js:279:18
+  at finish (/home/campan7/public_html/MeanStack/node_modules/gulp/node_modules/orchestrator/lib/runTask.js:21:8)
+  at module.exports (/home/campan7/public_html/MeanStack/node_modules/gulp/node_modules/orchestrator/lib/runTask.js:60:3)
+  at Gulp.Orchestrator._runTask (/home/campan7/public_html/MeanStack/node_modules/gulp/node_modules/orchestrator/index.js:273:3)
+  at Gulp.Orchestrator._runStep (/home/campan7/public_html/MeanStack/node_modules/gulp/node_modules/orchestrator/index.js:214:10)
+  at Gulp.Orchestrator.start (/home/campan7/public_html/MeanStack/node_modules/gulp/node_modules/orchestrator/index.js:134:8)
+  at Gulp.<anonymous> (/home/campan7/public_html/MeanStack/gulpfile.js:16:8)
+  at module.exports (/home/campan7/public_html/MeanStack/node_modules/gulp/node_modules/orchestrator/lib/runTask.js:34:7)
+  at Gulp.Orchestrator._runTask (/home/campan7/public_html/MeanStack/node_modules/gulp/node_modules/orchestrator/index.js:273:3)
+  at Gulp.Orchestrator._runStep (/home/campan7/public_html/MeanStack/node_modules/gulp/node_modules/orchestrator/index.js:214:10)
+  at /home/campan7/public_html/MeanStack/node_modules/gulp/node_modules/orchestrator/index.js:279:18
+  at finish (/home/campan7/public_html/MeanStack/node_modules/gulp/node_modules/orchestrator/lib/runTask.js:21:8)
+  at /home/campan7/public_html/MeanStack/node_modules/gulp/node_modules/orchestrator/lib/runTask.js:43:4
+  at run (/home/campan7/public_html/MeanStack/node_modules/karma/node_modules/core-js/modules/es6.promise.js:104:47)
+  at /home/campan7/public_html/MeanStack/node_modules/karma/node_modules/core-js/modules/es6.promise.js:115:28
+  at flush (/home/campan7/public_html/MeanStack/node_modules/karma/node_modules/core-js/modules/$.microtask.js:19:5)
+  at process._tickCallback (node.js:355:11)
+
+
+You already have a server listening on 35729
+You should stop it and try again.
+
+[23:59:52] Finished 'clean' after 51 s
+[23:59:52] [nodemon] 1.8.1
+[23:59:52] [nodemon] to restart at any time, enter `rs`
+[23:59:52] [nodemon] watching: *.*
+[23:59:52] [nodemon] starting `node --debug server.js`
+events.js:85
+      throw er; // Unhandled 'error' event
+            ^
+Error: EBADF, read
+  at Error (native)
+
